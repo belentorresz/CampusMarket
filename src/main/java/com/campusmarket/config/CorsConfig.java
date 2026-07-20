@@ -16,7 +16,10 @@ public class CorsConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOrigins(List.of("http://localhost:5173"));
+        configuration.setAllowedOrigins(List.of(
+                "http://localhost:5173",
+                "https://campusmarket-frontend-production.up.railway.app"
+        ));
 
         configuration.setAllowedMethods(List.of(
                 "GET",
